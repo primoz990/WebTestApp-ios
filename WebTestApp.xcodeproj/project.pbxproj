@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D93ACD421B25D79800B4EC22 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D93ACD411B25D79800B4EC22 /* libz.dylib */; };
+		9DC904291B295E5F003CA3E4 /* Login.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DC904261B295E5F003CA3E4 /* Login.java */; };
+		9DC9042A1B295E5F003CA3E4 /* LoginInterface.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DC904271B295E5F003CA3E4 /* LoginInterface.java */; };
+		9DC9042B1B295E5F003CA3E4 /* WebResult.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DC904281B295E5F003CA3E4 /* WebResult.java */; };
+		9DC904301B298A9F003CA3E4 /* Prefixes.properties in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9042F1B298A9F003CA3E4 /* Prefixes.properties */; };
 		D93ACD441B25D7A100B4EC22 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93ACD431B25D7A100B4EC22 /* Security.framework */; };
-		D93ACD461B25D7B700B4EC22 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D93ACD451B25D7B700B4EC22 /* libicucore.dylib */; };
 		D97EF8231B21B59800C15643 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D97EF8221B21B59800C15643 /* main.m */; };
 		D97EF8261B21B59800C15643 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D97EF8251B21B59800C15643 /* AppDelegate.m */; };
 		D97EF8291B21B59800C15643 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D97EF8281B21B59800C15643 /* ViewController.m */; };
@@ -35,9 +37,6 @@
 		D97EF87C1B21CE3100C15643 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D97EF86A1B21CE3100C15643 /* UIRefreshControl+AFNetworking.m */; };
 		D97EF87D1B21CE3100C15643 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D97EF86C1B21CE3100C15643 /* UIWebView+AFNetworking.m */; };
 		D9987A521B27002600C0EB4D /* LoginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9987A511B27002600C0EB4D /* LoginHelper.m */; };
-		D9FCF40C1B2857290050696B /* Login.java in Sources */ = {isa = PBXBuildFile; fileRef = D9FCF4091B2857290050696B /* Login.java */; };
-		D9FCF40D1B2857290050696B /* LoginInterface.java in Sources */ = {isa = PBXBuildFile; fileRef = D9FCF40A1B2857290050696B /* LoginInterface.java */; };
-		D9FCF40E1B2857290050696B /* WebResult.java in Sources */ = {isa = PBXBuildFile; fileRef = D9FCF40B1B2857290050696B /* WebResult.java */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -50,7 +49,7 @@
 				"${PROJECT_DIR}/Generated/${INPUT_FILE_BASE}.h",
 				"${PROJECT_DIR}/Generated/${INPUT_FILE_BASE}.m",
 			);
-			script = "../j2objc/j2objc -d \"${PROJECT_DIR}/Generated\" -sourcepath \"${PROJECT_DIR}/../WebTestApp-Android/weblib/src/main/java\" --no-package-directories -use-arc --prefixes prefixes.properties -g ${INPUT_FILE_PATH};";
+			script = "if [ ! -f \"${J2OBJC_HOME}/j2objc\" ]\nthen\n    echo \"J2OBJC_HOME not correctly defined in Settings.xcconfig, currently set to '${J2OBJC_HOME}'\"\n    exit 1\nelif [ ! -d \"${ANDROID_SRC}/\" ]\nthen\n    echo \"ANDROID_SRC not correctly defined in Settings.xcconfig, currently set to '${ANDROID_SRC}'\"\n    exit 1\nelse\n    \"${J2OBJC_HOME}/j2objc\" -d \"${PROJECT_DIR}/Generated\" -sourcepath ${ANDROID_SRC} --no-package-directories -use-arc --prefixes Config/Prefixes.properties -g ${INPUT_FILE_PATH}\nfi";
 		};
 /* End PBXBuildRule section */
 
@@ -65,9 +64,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D93ACD411B25D79800B4EC22 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9DC904261B295E5F003CA3E4 /* Login.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = Login.java; path = "../../../Android/Projects/WebTestApp-android/weblib/src/main/java/com/example/weblib/Login.java"; sourceTree = "<group>"; };
+		9DC904271B295E5F003CA3E4 /* LoginInterface.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = LoginInterface.java; path = "../../../Android/Projects/WebTestApp-android/weblib/src/main/java/com/example/weblib/LoginInterface.java"; sourceTree = "<group>"; };
+		9DC904281B295E5F003CA3E4 /* WebResult.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = WebResult.java; path = "../../../Android/Projects/WebTestApp-android/weblib/src/main/java/com/example/weblib/WebResult.java"; sourceTree = "<group>"; };
+		9DC9042C1B298240003CA3E4 /* Settings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Settings.xcconfig; path = Config/Settings.xcconfig; sourceTree = "<group>"; };
+		9DC9042F1B298A9F003CA3E4 /* Prefixes.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Prefixes.properties; path = Config/Prefixes.properties; sourceTree = "<group>"; };
+		9DC904311B298B31003CA3E4 /* Generated */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Generated; sourceTree = "<group>"; };
+		9DC904321B299A7F003CA3E4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9DC904341B299A87003CA3E4 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		9DC904361B299B9C003CA3E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9DC904381B299BA8003CA3E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D93ACD431B25D7A100B4EC22 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		D93ACD451B25D7B700B4EC22 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		D97EF81D1B21B59800C15643 /* WebTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97EF8211B21B59800C15643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D97EF8221B21B59800C15643 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -119,9 +126,6 @@
 		D97EF86C1B21CE3100C15643 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		D9987A501B26FFBE00C0EB4D /* LoginHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginHelper.h; sourceTree = "<group>"; };
 		D9987A511B27002600C0EB4D /* LoginHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginHelper.m; sourceTree = "<group>"; };
-		D9FCF4091B2857290050696B /* Login.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = Login.java; path = "../WebTestApp-Android/weblib/src/main/java/com/example/weblib/Login.java"; sourceTree = "<group>"; };
-		D9FCF40A1B2857290050696B /* LoginInterface.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = LoginInterface.java; path = "../WebTestApp-Android/weblib/src/main/java/com/example/weblib/LoginInterface.java"; sourceTree = "<group>"; };
-		D9FCF40B1B2857290050696B /* WebResult.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = WebResult.java; path = "../WebTestApp-Android/weblib/src/main/java/com/example/weblib/WebResult.java"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,9 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D93ACD461B25D7B700B4EC22 /* libicucore.dylib in Frameworks */,
 				D93ACD441B25D7A100B4EC22 /* Security.framework in Frameworks */,
-				D93ACD421B25D79800B4EC22 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,11 +147,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DC9042E1B298A8E003CA3E4 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9DC9042F1B298A9F003CA3E4 /* Prefixes.properties */,
+				9DC9042C1B298240003CA3E4 /* Settings.xcconfig */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
 		D97EF8141B21B59700C15643 = {
 			isa = PBXGroup;
 			children = (
-				D9987A3F1B26E5EE00C0EB4D /* WebLib */,
+				9DC9042E1B298A8E003CA3E4 /* Config */,
 				D9987A381B26E58B00C0EB4D /* Java */,
+				9DC904311B298B31003CA3E4 /* Generated */,
 				D97EF8461B21CE0100C15643 /* 3rdParty */,
 				D97EF81F1B21B59800C15643 /* WebTestApp */,
 				D97EF8391B21B59900C15643 /* WebTestAppTests */,
@@ -272,26 +284,21 @@
 		D9987A381B26E58B00C0EB4D /* Java */ = {
 			isa = PBXGroup;
 			children = (
-				D9FCF4091B2857290050696B /* Login.java */,
-				D9FCF40A1B2857290050696B /* LoginInterface.java */,
-				D9FCF40B1B2857290050696B /* WebResult.java */,
+				9DC904261B295E5F003CA3E4 /* Login.java */,
+				9DC904271B295E5F003CA3E4 /* LoginInterface.java */,
+				9DC904281B295E5F003CA3E4 /* WebResult.java */,
 			);
 			name = Java;
-			sourceTree = "<group>";
-		};
-		D9987A3F1B26E5EE00C0EB4D /* WebLib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = WebLib;
 			sourceTree = "<group>";
 		};
 		D9987A4F1B26FBE200C0EB4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D93ACD451B25D7B700B4EC22 /* libicucore.dylib */,
+				9DC904381B299BA8003CA3E4 /* UIKit.framework */,
+				9DC904361B299B9C003CA3E4 /* Foundation.framework */,
+				9DC904341B299A87003CA3E4 /* libicucore.dylib */,
+				9DC904321B299A7F003CA3E4 /* libz.dylib */,
 				D93ACD431B25D7A100B4EC22 /* Security.framework */,
-				D93ACD411B25D79800B4EC22 /* libz.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -377,6 +384,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC904301B298A9F003CA3E4 /* Prefixes.properties in Resources */,
 				D97EF82C1B21B59800C15643 /* Main.storyboard in Resources */,
 				D97EF8311B21B59900C15643 /* LaunchScreen.xib in Resources */,
 				D97EF82E1B21B59900C15643 /* Images.xcassets in Resources */,
@@ -402,13 +410,13 @@
 				D97EF8291B21B59800C15643 /* ViewController.m in Sources */,
 				D97EF86E1B21CE3100C15643 /* AFHTTPRequestOperationManager.m in Sources */,
 				D97EF87B1B21CE3100C15643 /* UIProgressView+AFNetworking.m in Sources */,
-				D9FCF40C1B2857290050696B /* Login.java in Sources */,
+				9DC904291B295E5F003CA3E4 /* Login.java in Sources */,
 				D97EF8701B21CE3100C15643 /* AFNetworkReachabilityManager.m in Sources */,
 				D97EF8741B21CE3100C15643 /* AFURLResponseSerialization.m in Sources */,
 				D9987A521B27002600C0EB4D /* LoginHelper.m in Sources */,
 				D97EF8721B21CE3100C15643 /* AFURLConnectionOperation.m in Sources */,
 				D97EF8791B21CE3100C15643 /* UIButton+AFNetworking.m in Sources */,
-				D9FCF40E1B2857290050696B /* WebResult.java in Sources */,
+				9DC9042B1B295E5F003CA3E4 /* WebResult.java in Sources */,
 				D97EF8771B21CE3100C15643 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				D97EF8711B21CE3100C15643 /* AFSecurityPolicy.m in Sources */,
 				D97EF87C1B21CE3100C15643 /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -419,7 +427,7 @@
 				D97EF8761B21CE3100C15643 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				D97EF8751B21CE3100C15643 /* AFURLSessionManager.m in Sources */,
 				D97EF8261B21B59800C15643 /* AppDelegate.m in Sources */,
-				D9FCF40D1B2857290050696B /* LoginInterface.java in Sources */,
+				9DC9042A1B295E5F003CA3E4 /* LoginInterface.java in Sources */,
 				D97EF8231B21B59800C15643 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +472,7 @@
 /* Begin XCBuildConfiguration section */
 		D97EF83E1B21B59900C15643 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DC9042C1B298240003CA3E4 /* Settings.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -508,6 +517,7 @@
 		};
 		D97EF83F1B21B59900C15643 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DC9042C1B298240003CA3E4 /* Settings.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -554,10 +564,7 @@
 				);
 				INFOPLIST_FILE = WebTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = ../j2objc/lib;
-				OTHER_LDFLAGS = "-ljre_emul";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "${DERIVED_FILES_DIR} ../j2objc/include";
 			};
 			name = Debug;
 		};
@@ -571,10 +578,7 @@
 				);
 				INFOPLIST_FILE = WebTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = ../j2objc/lib;
-				OTHER_LDFLAGS = "-ljre_emul";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "${DERIVED_FILES_DIR} ../j2objc/include";
 			};
 			name = Release;
 		};

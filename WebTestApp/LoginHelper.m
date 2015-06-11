@@ -13,15 +13,7 @@
 
 - (void)loginWithNSString:(NSString *)username
              withNSString:(NSString *)password{
-    NSLog(@"Lets do a web request!");
-    
-    NSString *credentials = [NSString stringWithFormat:@"%@:%@", username, password];
-    NSData *nsdata = [credentials dataUsingEncoding:NSUTF8StringEncoding];
-    NSString *base64Encoded = [nsdata base64EncodedStringWithOptions:0];
-    
-    
-    NSString *authHead = [NSString stringWithFormat:@"%@ %@", @"basic", base64Encoded];
-    
+    NSString *authHead = [self getAuthHeaderWithNSString:username withNSString:password];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
