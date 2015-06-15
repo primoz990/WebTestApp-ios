@@ -13,15 +13,16 @@
     companiesList = [[JavaUtilArrayList alloc] init];
     
     DataHelper *dh = [[DataHelper alloc] init];
-    dh.onSuccess = ^(JavaUtilArrayList* companies){
+    dh.onSuccess = ^(JavaUtilArrayList* companies, BOOL cached){
         [companiesList clear];
         companiesList = companies;
         [self.tableView reloadData];
+        NSLog(@"Cache: %u", cached);
     };
     dh.onFailed = ^(NSString *message){
         NSLog(@"Getting data ERROR: %@", message);
     };
-    [dh executeWithBoolean:NO];
+    [dh execute];
 }
 
 - (IBAction)onBackClick:(id)sender {

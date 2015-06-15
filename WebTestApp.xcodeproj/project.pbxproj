@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D04A7BB1B2EBEB2000AE6F5 /* DataCache.java in Sources */ = {isa = PBXBuildFile; fileRef = 9D04A7BA1B2EBEB2000AE6F5 /* DataCache.java */; };
 		9DB6D3A91B2AA9A5000DD348 /* Company.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D3A41B2AA9A5000DD348 /* Company.java */; };
 		9DB6D3AA1B2AA9A5000DD348 /* Login.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D3A61B2AA9A5000DD348 /* Login.java */; };
 		9DB6D3AB1B2AA9A5000DD348 /* LoginInterface.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D3A71B2AA9A5000DD348 /* LoginInterface.java */; };
@@ -16,6 +17,7 @@
 		9DB6D3B81B2B04D7000DD348 /* DataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D3B71B2B04D7000DD348 /* DataTableViewController.m */; };
 		9DB6D3BB1B2B0AE8000DD348 /* DataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D3BA1B2B0AE8000DD348 /* DataHelper.m */; };
 		9DC904301B298A9F003CA3E4 /* Prefixes.properties in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9042F1B298A9F003CA3E4 /* Prefixes.properties */; };
+		9DF1FA0C1B2E9FEA00F69FF1 /* Generated in Resources */ = {isa = PBXBuildFile; fileRef = 9DF1FA0B1B2E9FEA00F69FF1 /* Generated */; };
 		D93ACD441B25D7A100B4EC22 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93ACD431B25D7A100B4EC22 /* Security.framework */; };
 		D97EF8231B21B59800C15643 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D97EF8221B21B59800C15643 /* main.m */; };
 		D97EF8261B21B59800C15643 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D97EF8251B21B59800C15643 /* AppDelegate.m */; };
@@ -69,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D04A7BA1B2EBEB2000AE6F5 /* DataCache.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = DataCache.java; sourceTree = "<group>"; };
 		9DB6D3A41B2AA9A5000DD348 /* Company.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Company.java; sourceTree = "<group>"; };
 		9DB6D3A61B2AA9A5000DD348 /* Login.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Login.java; sourceTree = "<group>"; };
 		9DB6D3A71B2AA9A5000DD348 /* LoginInterface.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = LoginInterface.java; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 		9DC904341B299A87003CA3E4 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		9DC904361B299B9C003CA3E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9DC904381B299BA8003CA3E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9DF1FA0B1B2E9FEA00F69FF1 /* Generated */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Generated; sourceTree = "<group>"; };
 		D93ACD431B25D7A100B4EC22 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D97EF81D1B21B59800C15643 /* WebTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97EF8211B21B59800C15643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 		9DB6D3A31B2AA9A5000DD348 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				9D04A7BA1B2EBEB2000AE6F5 /* DataCache.java */,
 				9DB6D3AF1B2ADA3D000DD348 /* DataInterface.java */,
 				9DB6D3AD1B2AB53F000DD348 /* Data.java */,
 				9DB6D3A41B2AA9A5000DD348 /* Company.java */,
@@ -225,6 +230,7 @@
 				9DB6D3A21B2AA9A5000DD348 /* weblib */,
 				9DC9042E1B298A8E003CA3E4 /* Config */,
 				D97EF8461B21CE0100C15643 /* 3rdParty */,
+				9DF1FA0B1B2E9FEA00F69FF1 /* Generated */,
 				D97EF81F1B21B59800C15643 /* WebTestApp */,
 				D97EF8391B21B59900C15643 /* WebTestAppTests */,
 				D9987A4F1B26FBE200C0EB4D /* Frameworks */,
@@ -435,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DC904301B298A9F003CA3E4 /* Prefixes.properties in Resources */,
+				9DF1FA0C1B2E9FEA00F69FF1 /* Generated in Resources */,
 				D97EF82C1B21B59800C15643 /* Main.storyboard in Resources */,
 				D97EF8311B21B59900C15643 /* LaunchScreen.xib in Resources */,
 				D97EF82E1B21B59900C15643 /* Images.xcassets in Resources */,
@@ -483,6 +490,7 @@
 				9DB6D3B01B2ADA3D000DD348 /* DataInterface.java in Sources */,
 				9DB6D3AB1B2AA9A5000DD348 /* LoginInterface.java in Sources */,
 				D97EF8261B21B59800C15643 /* AppDelegate.m in Sources */,
+				9D04A7BB1B2EBEB2000AE6F5 /* DataCache.java in Sources */,
 				D97EF8231B21B59800C15643 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

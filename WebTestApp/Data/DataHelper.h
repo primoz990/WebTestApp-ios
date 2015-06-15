@@ -5,7 +5,7 @@
 
 @interface DataHelper : WLData
 
-@property (readwrite, copy) void (^onSuccess)(JavaUtilArrayList*);
+@property (readwrite, copy) void (^onSuccess)(JavaUtilArrayList*, BOOL);
 @property (readwrite, copy) void (^onFailed)(NSString*);
 
 @end
