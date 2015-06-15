@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9DC904291B295E5F003CA3E4 /* Login.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DC904261B295E5F003CA3E4 /* Login.java */; };
-		9DC9042A1B295E5F003CA3E4 /* LoginInterface.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DC904271B295E5F003CA3E4 /* LoginInterface.java */; };
-		9DC9042B1B295E5F003CA3E4 /* WebResult.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DC904281B295E5F003CA3E4 /* WebResult.java */; };
+		9DB6D3A91B2AA9A5000DD348 /* Company.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D3A41B2AA9A5000DD348 /* Company.java */; };
+		9DB6D3AA1B2AA9A5000DD348 /* Login.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D3A61B2AA9A5000DD348 /* Login.java */; };
+		9DB6D3AB1B2AA9A5000DD348 /* LoginInterface.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D3A71B2AA9A5000DD348 /* LoginInterface.java */; };
+		9DB6D3AC1B2AA9A5000DD348 /* WebResult.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D3A81B2AA9A5000DD348 /* WebResult.java */; };
+		9DB6D3AE1B2AB53F000DD348 /* Data.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D3AD1B2AB53F000DD348 /* Data.java */; };
+		9DB6D3B01B2ADA3D000DD348 /* DataInterface.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D3AF1B2ADA3D000DD348 /* DataInterface.java */; };
+		9DB6D3B81B2B04D7000DD348 /* DataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D3B71B2B04D7000DD348 /* DataTableViewController.m */; };
+		9DB6D3BB1B2B0AE8000DD348 /* DataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D3BA1B2B0AE8000DD348 /* DataHelper.m */; };
 		9DC904301B298A9F003CA3E4 /* Prefixes.properties in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9042F1B298A9F003CA3E4 /* Prefixes.properties */; };
 		D93ACD441B25D7A100B4EC22 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93ACD431B25D7A100B4EC22 /* Security.framework */; };
 		D97EF8231B21B59800C15643 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D97EF8221B21B59800C15643 /* main.m */; };
@@ -64,12 +69,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9DC904261B295E5F003CA3E4 /* Login.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = Login.java; path = "../../../Android/Projects/WebTestApp-android/weblib/src/main/java/com/example/weblib/Login.java"; sourceTree = "<group>"; };
-		9DC904271B295E5F003CA3E4 /* LoginInterface.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = LoginInterface.java; path = "../../../Android/Projects/WebTestApp-android/weblib/src/main/java/com/example/weblib/LoginInterface.java"; sourceTree = "<group>"; };
-		9DC904281B295E5F003CA3E4 /* WebResult.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = WebResult.java; path = "../../../Android/Projects/WebTestApp-android/weblib/src/main/java/com/example/weblib/WebResult.java"; sourceTree = "<group>"; };
+		9DB6D3A41B2AA9A5000DD348 /* Company.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Company.java; sourceTree = "<group>"; };
+		9DB6D3A61B2AA9A5000DD348 /* Login.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Login.java; sourceTree = "<group>"; };
+		9DB6D3A71B2AA9A5000DD348 /* LoginInterface.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = LoginInterface.java; sourceTree = "<group>"; };
+		9DB6D3A81B2AA9A5000DD348 /* WebResult.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = WebResult.java; sourceTree = "<group>"; };
+		9DB6D3AD1B2AB53F000DD348 /* Data.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Data.java; sourceTree = "<group>"; };
+		9DB6D3AF1B2ADA3D000DD348 /* DataInterface.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = DataInterface.java; sourceTree = "<group>"; };
+		9DB6D3B61B2B04D7000DD348 /* DataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataTableViewController.h; path = Data/DataTableViewController.h; sourceTree = "<group>"; };
+		9DB6D3B71B2B04D7000DD348 /* DataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataTableViewController.m; path = Data/DataTableViewController.m; sourceTree = "<group>"; };
+		9DB6D3B91B2B0AE8000DD348 /* DataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataHelper.h; path = Data/DataHelper.h; sourceTree = "<group>"; };
+		9DB6D3BA1B2B0AE8000DD348 /* DataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataHelper.m; path = Data/DataHelper.m; sourceTree = "<group>"; };
 		9DC9042C1B298240003CA3E4 /* Settings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Settings.xcconfig; path = Config/Settings.xcconfig; sourceTree = "<group>"; };
 		9DC9042F1B298A9F003CA3E4 /* Prefixes.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Prefixes.properties; path = Config/Prefixes.properties; sourceTree = "<group>"; };
-		9DC904311B298B31003CA3E4 /* Generated */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Generated; sourceTree = "<group>"; };
 		9DC904321B299A7F003CA3E4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		9DC904341B299A87003CA3E4 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		9DC904361B299B9C003CA3E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,8 +91,8 @@
 		D97EF8221B21B59800C15643 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D97EF8241B21B59800C15643 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D97EF8251B21B59800C15643 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D97EF8271B21B59800C15643 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D97EF8281B21B59800C15643 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D97EF8271B21B59800C15643 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Login/ViewController.h; sourceTree = "<group>"; };
+		D97EF8281B21B59800C15643 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Login/ViewController.m; sourceTree = "<group>"; };
 		D97EF82B1B21B59800C15643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D97EF82D1B21B59900C15643 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D97EF8301B21B59900C15643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -124,8 +135,8 @@
 		D97EF86A1B21CE3100C15643 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		D97EF86B1B21CE3100C15643 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		D97EF86C1B21CE3100C15643 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		D9987A501B26FFBE00C0EB4D /* LoginHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginHelper.h; sourceTree = "<group>"; };
-		D9987A511B27002600C0EB4D /* LoginHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginHelper.m; sourceTree = "<group>"; };
+		D9987A501B26FFBE00C0EB4D /* LoginHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginHelper.h; path = Login/LoginHelper.h; sourceTree = "<group>"; };
+		D9987A511B27002600C0EB4D /* LoginHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginHelper.m; path = Login/LoginHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +158,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DB6D3A21B2AA9A5000DD348 /* weblib */ = {
+			isa = PBXGroup;
+			children = (
+				9DB6D3A31B2AA9A5000DD348 /* data */,
+				9DB6D3A51B2AA9A5000DD348 /* login */,
+				9DB6D3A81B2AA9A5000DD348 /* WebResult.java */,
+			);
+			name = weblib;
+			path = "../../../Android/Projects/WebTestApp-android/weblib/src/main/java/com/example/weblib";
+			sourceTree = "<group>";
+		};
+		9DB6D3A31B2AA9A5000DD348 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				9DB6D3AF1B2ADA3D000DD348 /* DataInterface.java */,
+				9DB6D3AD1B2AB53F000DD348 /* Data.java */,
+				9DB6D3A41B2AA9A5000DD348 /* Company.java */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		9DB6D3A51B2AA9A5000DD348 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				9DB6D3A61B2AA9A5000DD348 /* Login.java */,
+				9DB6D3A71B2AA9A5000DD348 /* LoginInterface.java */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		9DB6D3B11B2AFD3C000DD348 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D9987A501B26FFBE00C0EB4D /* LoginHelper.h */,
+				D9987A511B27002600C0EB4D /* LoginHelper.m */,
+				D97EF8271B21B59800C15643 /* ViewController.h */,
+				D97EF8281B21B59800C15643 /* ViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		9DB6D3B21B2AFD44000DD348 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9DB6D3B91B2B0AE8000DD348 /* DataHelper.h */,
+				9DB6D3BA1B2B0AE8000DD348 /* DataHelper.m */,
+				9DB6D3B61B2B04D7000DD348 /* DataTableViewController.h */,
+				9DB6D3B71B2B04D7000DD348 /* DataTableViewController.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		9DC9042E1B298A8E003CA3E4 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,9 +222,8 @@
 		D97EF8141B21B59700C15643 = {
 			isa = PBXGroup;
 			children = (
+				9DB6D3A21B2AA9A5000DD348 /* weblib */,
 				9DC9042E1B298A8E003CA3E4 /* Config */,
-				D9987A381B26E58B00C0EB4D /* Java */,
-				9DC904311B298B31003CA3E4 /* Generated */,
 				D97EF8461B21CE0100C15643 /* 3rdParty */,
 				D97EF81F1B21B59800C15643 /* WebTestApp */,
 				D97EF8391B21B59900C15643 /* WebTestAppTests */,
@@ -182,12 +244,10 @@
 		D97EF81F1B21B59800C15643 /* WebTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				9DB6D3B21B2AFD44000DD348 /* Data */,
+				9DB6D3B11B2AFD3C000DD348 /* Login */,
 				D97EF8241B21B59800C15643 /* AppDelegate.h */,
-				D9987A501B26FFBE00C0EB4D /* LoginHelper.h */,
-				D97EF8271B21B59800C15643 /* ViewController.h */,
 				D97EF8251B21B59800C15643 /* AppDelegate.m */,
-				D9987A511B27002600C0EB4D /* LoginHelper.m */,
-				D97EF8281B21B59800C15643 /* ViewController.m */,
 				D97EF82D1B21B59900C15643 /* Images.xcassets */,
 				D97EF82F1B21B59900C15643 /* LaunchScreen.xib */,
 				D97EF82A1B21B59800C15643 /* Main.storyboard */,
@@ -279,16 +339,6 @@
 				D97EF86C1B21CE3100C15643 /* UIWebView+AFNetworking.m */,
 			);
 			path = "UIKit+AFNetworking";
-			sourceTree = "<group>";
-		};
-		D9987A381B26E58B00C0EB4D /* Java */ = {
-			isa = PBXGroup;
-			children = (
-				9DC904261B295E5F003CA3E4 /* Login.java */,
-				9DC904271B295E5F003CA3E4 /* LoginInterface.java */,
-				9DC904281B295E5F003CA3E4 /* WebResult.java */,
-			);
-			name = Java;
 			sourceTree = "<group>";
 		};
 		D9987A4F1B26FBE200C0EB4D /* Frameworks */ = {
@@ -405,18 +455,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB6D3BB1B2B0AE8000DD348 /* DataHelper.m in Sources */,
 				D97EF86D1B21CE3100C15643 /* AFHTTPRequestOperation.m in Sources */,
+				9DB6D3B81B2B04D7000DD348 /* DataTableViewController.m in Sources */,
+				9DB6D3AE1B2AB53F000DD348 /* Data.java in Sources */,
+				9DB6D3AA1B2AA9A5000DD348 /* Login.java in Sources */,
 				D97EF87A1B21CE3100C15643 /* UIImageView+AFNetworking.m in Sources */,
 				D97EF8291B21B59800C15643 /* ViewController.m in Sources */,
 				D97EF86E1B21CE3100C15643 /* AFHTTPRequestOperationManager.m in Sources */,
 				D97EF87B1B21CE3100C15643 /* UIProgressView+AFNetworking.m in Sources */,
-				9DC904291B295E5F003CA3E4 /* Login.java in Sources */,
 				D97EF8701B21CE3100C15643 /* AFNetworkReachabilityManager.m in Sources */,
 				D97EF8741B21CE3100C15643 /* AFURLResponseSerialization.m in Sources */,
 				D9987A521B27002600C0EB4D /* LoginHelper.m in Sources */,
 				D97EF8721B21CE3100C15643 /* AFURLConnectionOperation.m in Sources */,
 				D97EF8791B21CE3100C15643 /* UIButton+AFNetworking.m in Sources */,
-				9DC9042B1B295E5F003CA3E4 /* WebResult.java in Sources */,
 				D97EF8771B21CE3100C15643 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				D97EF8711B21CE3100C15643 /* AFSecurityPolicy.m in Sources */,
 				D97EF87C1B21CE3100C15643 /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -424,10 +476,13 @@
 				D97EF86F1B21CE3100C15643 /* AFHTTPSessionManager.m in Sources */,
 				D97EF8781B21CE3100C15643 /* UIAlertView+AFNetworking.m in Sources */,
 				D97EF8731B21CE3100C15643 /* AFURLRequestSerialization.m in Sources */,
+				9DB6D3A91B2AA9A5000DD348 /* Company.java in Sources */,
 				D97EF8761B21CE3100C15643 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				D97EF8751B21CE3100C15643 /* AFURLSessionManager.m in Sources */,
+				9DB6D3AC1B2AA9A5000DD348 /* WebResult.java in Sources */,
+				9DB6D3B01B2ADA3D000DD348 /* DataInterface.java in Sources */,
+				9DB6D3AB1B2AA9A5000DD348 /* LoginInterface.java in Sources */,
 				D97EF8261B21B59800C15643 /* AppDelegate.m in Sources */,
-				9DC9042A1B295E5F003CA3E4 /* LoginInterface.java in Sources */,
 				D97EF8231B21B59800C15643 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

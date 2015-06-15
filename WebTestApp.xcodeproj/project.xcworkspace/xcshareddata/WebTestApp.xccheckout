@@ -22,7 +22,7 @@
 		<key>5D34A3878E76DBEA0EDF3C1BA1FC69B9F87AD9B4</key>
 		<string>../..</string>
 		<key>7F1C8F748F0F5FF724ACF8B91D7957568E80930B</key>
-		<string>../../../../../Android/Projects/WebTestApp-android</string>
+		<string>../../../Android/Projects/WebTestApp-android</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/primoz990/WebTestApp-ios.git</string>

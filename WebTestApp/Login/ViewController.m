@@ -27,6 +27,7 @@
     LoginHelper *lh = [[LoginHelper alloc] init];
     lh.loginSuccess = ^{
         [lblStatus setText:@"Login success"];
+        [self performSegueWithIdentifier:@"showDataSegue" sender:self];
     };
     lh.loginFailed = ^(NSInteger code, NSString *message){
         NSString *errorMessage = [NSString stringWithFormat:@"Login failed\n%@", message];
