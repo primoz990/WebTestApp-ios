@@ -3,6 +3,7 @@
 #import "DataHelper.h"
 #import "AFNetworking.h"
 #import "DataCache.h"
+#import "DBHelper.h"
 
 @interface DataHelper ()
 
@@ -24,13 +25,13 @@
 }
 
 - (JavaUtilArrayList *)getFromDB{
-    //TODO implement
-    return nil;
+    //TODO in backdroud thread
+    return [[DBHelper sharedInstance] getCompanies];
 }
 
 - (jboolean)setToDBWithJavaUtilArrayList:(JavaUtilArrayList *)companies{
-    //TODO implement
-    return NO;
+    //TODO in backdroud thread
+    return [[DBHelper sharedInstance] setCompanies:companies];
 }
 
 - (void)onSuccessWithJavaUtilArrayList:(JavaUtilArrayList *)companies withBoolean:(jboolean)cached{

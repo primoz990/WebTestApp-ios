@@ -49,8 +49,8 @@
     
 
     WLCompany *company = [companiesList getWithInt:(int)indexPath.row];
-    [cell.textLabel setText:[company getTitle]];
-    [cell.detailTextLabel setText:[company getDetail]];
+    [cell.textLabel setText:[company getFullName]];
+    [cell.detailTextLabel setText:[company getAddressStreet]];
     
     return cell;
 }
