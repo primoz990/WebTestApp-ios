@@ -33,6 +33,7 @@
 		9D0658841B32E30500861C09 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0658831B32E30500861C09 /* libsqlite3.dylib */; };
 		9D0658871B32E3A000861C09 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0658861B32E3A000861C09 /* DBHelper.m */; };
 		9D06588B1B32F41900861C09 /* DbContract.java in Sources */ = {isa = PBXBuildFile; fileRef = 9D06588A1B32F41900861C09 /* DbContract.java */; };
+		9D821A231B37D4BC007E15F5 /* DbObject.java in Sources */ = {isa = PBXBuildFile; fileRef = 9D821A221B37D4BC007E15F5 /* DbObject.java */; };
 		9DB6D3A91B2AA9A5000DD348 /* Company.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D3A41B2AA9A5000DD348 /* Company.java */; };
 		9DB6D3AA1B2AA9A5000DD348 /* Login.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D3A61B2AA9A5000DD348 /* Login.java */; };
 		9DB6D3AB1B2AA9A5000DD348 /* LoginInterface.java in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6D3A71B2AA9A5000DD348 /* LoginInterface.java */; };
@@ -131,6 +132,7 @@
 		9D0658851B32E3A000861C09 /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBHelper.h; path = Data/DBHelper.h; sourceTree = "<group>"; };
 		9D0658861B32E3A000861C09 /* DBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBHelper.m; path = Data/DBHelper.m; sourceTree = "<group>"; };
 		9D06588A1B32F41900861C09 /* DbContract.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = DbContract.java; sourceTree = "<group>"; };
+		9D821A221B37D4BC007E15F5 /* DbObject.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = DbObject.java; sourceTree = "<group>"; };
 		9DB6D3A41B2AA9A5000DD348 /* Company.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Company.java; sourceTree = "<group>"; };
 		9DB6D3A61B2AA9A5000DD348 /* Login.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Login.java; sourceTree = "<group>"; };
 		9DB6D3A71B2AA9A5000DD348 /* LoginInterface.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = LoginInterface.java; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 		9D0658891B32F41900861C09 /* db */ = {
 			isa = PBXGroup;
 			children = (
+				9D821A221B37D4BC007E15F5 /* DbObject.java */,
 				9D06588A1B32F41900861C09 /* DbContract.java */,
 			);
 			path = db;
@@ -544,6 +547,7 @@
 				9DB6D3AC1B2AA9A5000DD348 /* WebResult.java in Sources */,
 				9D06585F1B32E2B000861C09 /* AFNetworkReachabilityManager.m in Sources */,
 				9D06587E1B32E2F100861C09 /* FMDatabase.m in Sources */,
+				9D821A231B37D4BC007E15F5 /* DbObject.java in Sources */,
 				9D0658641B32E2B000861C09 /* AFURLSessionManager.m in Sources */,
 				9D0658701B32E2B000861C09 /* UIRefreshControl+AFNetworking.m in Sources */,
 				9D06587F1B32E2F100861C09 /* FMDatabaseAdditions.m in Sources */,
