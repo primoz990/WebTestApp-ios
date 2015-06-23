@@ -3,7 +3,7 @@
 #import "sqlite3.h"
 #import "FMDatabase.h"
 #import "FMDatabaseQueue.h"
-#include "java/util/ArrayList.h"
+#import "Company.h"
 
 @interface DBHelper : NSObject {
     FMDatabaseQueue *mDbQueue;
@@ -11,9 +11,6 @@
 
 + (DBHelper*)sharedInstance;
 
-- (BOOL) setCompanies:(JavaUtilArrayList*)companies;
-- (JavaUtilArrayList*) getCompanies;
-
-
+- (FMDatabaseQueue *)getQueue;
 
 @end
